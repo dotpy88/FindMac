@@ -4,15 +4,15 @@ import re
 import os
 import sys
 
-### Load .env file to get password ###
+### Load .env file to get username,password ###
 load_dotenv()
 
 ### Cisco params used for netmiko package ###
 cisco_device = {
     'device_type': 'cisco_ios',
     'host': '',
-    'username': 'tsmtbs07',
-    'password': os.getenv('PASSWORD')
+    'username': os.getenv('CISCO_USERNAME'),
+    'password': os.getenv('CISCO_PASSWORD')
 }
 
 ### Load hostlist.csv file to get ip address of switches ###
