@@ -2,8 +2,7 @@ Getting started -
 
 1. pip install -r requirements.txt
 
-2. Create .env file in directory with username,password variables.  Ex.  CISCO_USERNAME=admin
-                                                                         CISCO_PASSWORD=some_password
+2. Rename .env_example to .env and update network device credentials in this file
 
 3. Populate hostlist.csv with ip of switch in first column
 
